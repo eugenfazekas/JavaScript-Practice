@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			
+			function prime(){
+			var x =  prompt('Adj meg egy szamot!');
+			if(isFinite(x) && Math.floor(x)==x){
+				if(eldont(x)){
+					alert('A szam prim!');
+				}else{
+					alert('A szam nem prim!')
+				}
+			}else{
+				alert('Egesz szamot adj meg!');
+			}
+		}
+		function eldont(x) {
+			var i = 2;
+			while(i<=Math.floor(Math.sqrt(x)) && x%i!=0){
+			++i;
+			}
+			return i>Math.floor(Math.sqrt(x));
+		}
+		
+		</script>
+	</head>
+	<body>
+		<input type="button" value="Prim!" onClick="prime()">
+	</body>
+</html>

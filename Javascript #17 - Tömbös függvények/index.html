@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			
+			var tomb = new Array('Alma','Banan','Citrom','Dinye','Kiwi');
+			tomb.push('Malna'); //Hozzadas a vegere
+			document.write(tomb[5],'<br />');
+			tomb.pop();  // Torles a vegerol
+
+			tomb.unshift('Ribizli');	//Hozzadas az elejere
+			document.write(tomb[0],'<br />');
+			
+			tomb.shift();          // Torles az elejerol
+			document.write(tomb[0],'<br />');
+			//Index elem az elejetol
+			document.write(tomb.indexOf('Dinye'), '<br />');
+			// Kereses a vegerol
+			document.write(tomb.lastIndexOf('Dinye'), '<br />')
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

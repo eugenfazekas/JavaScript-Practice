@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			function elfogad () {
+				if(document.forms[0].box.checked){
+				return "Koszonjuk h elfogadta a regisztracios felteteleket";
+			}else{
+				return "El kell fogadni a regisracios felteteleket! ";
+			} 
+		}
+		</script>
+	</head>
+	<body >
+		<form name="alma">
+			Elfogadja a felhasznaloi felteteleket:<input type="checkbox" name="box">
+			
+			<input type="button" value="Kuld!" onClick="alert(elfogad());">
+		</form>
+		<script type="text/javascript">
+				document.write(getLength());
+		</script>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			
+			function feltolt(){
+				for(var i = 0; i < 100; ++i ){
+					tomb.push(Math.floor(Math.random()*100)+1);
+				}
+			}
+			
+			function kilistaz() {
+				for(var i = 0; i < tomb.length; ++i){
+					document.write('A tomb ', i+1, '. eleme ' ,  tomb[i], '<br />');
+				}
+			}
+			
+			var tomb = new Array();
+			feltolt(tomb);
+			kilistaz(tomb);
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

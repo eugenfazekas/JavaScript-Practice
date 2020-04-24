@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<script type="text/javascript">
+		document.write('<table border="1px" syle="margin: 10px; color:#888">');
+			for(var i=0; i<=360; ++i){
+				var rad = i*Math.PI/180;
+				document.write('<tr><td>',i,' = </td><td>radian: ',rad, 
+				'</td><td>  sin= ', Math.sin(rad),
+				'</td><td> cos= ', Math.cos(rad),
+				'</td><td> tan= ', Math.tan(rad),
+				'</td><td> ctg= ', 1/Math.tan(rad),'</td></tr>'
+				);
+			}
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

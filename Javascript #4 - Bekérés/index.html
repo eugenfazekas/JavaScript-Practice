@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			var a = prompt('adj meg egy szamot');
+			if(isFinite(a)){
+				if(Math.floor(a)==a){
+					if(a%2==0){
+						document.write('A szam paros');
+					}else{
+						document.write('A szam paratlan');
+					} 
+				}else{
+					document.write('A valos szamok nem lehetnek parosak vagy paratlanok');
+				}
+			}else{
+					document.write('Nem szamot adtal meg');
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

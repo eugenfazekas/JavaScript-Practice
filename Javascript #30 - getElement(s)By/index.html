@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			function getLength (){
+				var x = document.getElementsByTagName("input").length;
+				return x;
+			}
+			function csere() {
+				document.getElementById("get").style.color="red";
+			}
+			function piros() {
+				document.bgColor="red";
+			}
+			function kek() {
+				document.bgColor="blue";
+			}
+			function zold() {
+				document.bgColor="green";
+			}
+			function eredeti() {
+				document.bgColor="white";
+			}
+			
+		</script>
+	</head>
+	<body >
+		<h1 id="get" onClick="csere()">Kattins Ide</h1>
+			<center>
+				<button onClick="piros()">Piros</button>
+				<button onClick="kek()">Kek</button>
+				<button onClick="zold()">Zold</button>
+				<button onClick="eredeti()">Eredeti</button>
+			</center>
+			
+		<form name="alma">
+				<input type="text">
+				<input type="text">
+				<input type="text">
+				<input type="submit" value="Submit!">
+		</form>
+		<script type="text/javascript">
+				document.write(getLength());
+		</script>
+	</body>
+</html>
